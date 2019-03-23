@@ -1,9 +1,3 @@
-/* by default printf doesnt support floating point. To enable floating point
- * use this tutorial: http://startingelectronics.org/articles/atmel-AVR-8-bit/print-float-atmel-studio-7/
- * 
- * @ArduinoEasy
- */
-
 #include <atmel_start.h>
 #include "clock_config.h"
 #include <util/delay.h>

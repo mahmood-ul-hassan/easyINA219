@@ -3,6 +3,8 @@
  *
  * twitter: @ArduinoEasy
  */
+
+#include "i2c_simple_master.h"
 #include "easyINA219.h"
 
 
@@ -15,7 +17,6 @@ static int16_t ina219_getPower_raw(easy_INA219 *ina219);
 
 
 void ina219_wireWriteRegister (uint8_t addr, uint8_t reg, uint16_t value){
-	value = (value>>8)|(value<<8);
 	I2C_0_write2ByteRegister(addr, reg, value);
 }
 
